@@ -41,16 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
       rethrow;
     }
   }
-
-  // Future<void> method() async {
-  //   String batteryLevel;
-  //   try {
-  //     final Function result = await platform.invokeMethod('sdkLog');
-  //     batteryLevel = 'Battery level at $result % .';
-  //   } on PlatformException catch (e) {
-  //     batteryLevel = "Failed to get battery level: '${e.message}'.";
-  //   }
-  // }
+  
   Future<void> sdkLog(params) async =>
       await invoke("sdkLog", {"params": params});
 

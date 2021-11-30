@@ -38,30 +38,15 @@ override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
             when (call.method) {
                 "sdkLog" -> {
                     //myLib.d(argument = call.argument<String>("params").toString())
-                    val check_out_payment = JSONObject()
-                    try {
-                        check_out_payment.put("description", "Bayar Tagihan dari Julo")
-                        check_out_payment.put("merchantId", "6346354")
-                        check_out_payment.put("merchantName", "Kantin Buah")
-                        check_out_payment.put("requestDate", "2021-02-16 09:47:37")
-                        check_out_payment.put("amount", 65000)
-                        check_out_payment.put("fee", 0)
-                        check_out_payment.put("total", 65000)
-                    } catch (e: JSONException) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace()
-                    }
 
-                    val jsonStr = check_out_payment.toString()
-
-                    OttoSdk.runAtProduction().initSdk(
+                    OttoSdk.runAtDev().initSdk(
                         this,
-                        "BOGASARI",
+                        "OTTOSTAMP",
                         android_id,
                         "081351869149",
                         "",
-                        jsonStr,
-                        "WaqRwEWpGnLdhRVFJtAMTreKDtMa", "94y4z78uOkcTmgddgFaYoCiAX9ga"
+                        "",
+                        "l1ksb2PvqimtMsH42CxVdlLRSg4a", "3FEhGyB_HU3FDDfIWcc80rHv0j8a"
                     ).start()
 
                     result.success(true)

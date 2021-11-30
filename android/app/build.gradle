@@ -68,7 +68,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     // implementation files('libs/app-debug.aar')
 //    implementation("com.androidadvance:topsnackbar:1.1.1")
-    implementation 'id.pede.gitlab.vexlib:OttoSdkV2:3.3'
+    implementation 'id.pede.gitlab.vexlib:OttoSdkV2:3.4'
 //    ext.wvLibVer = '1.3.0'
 //    implementation "id.pede.gitlab.vexlib.WebviewLib:WebviewModuleCore:$wvLibVer"
 //    implementation "id.pede.gitlab.vexlib.WebviewLib:WebviewModuleAuth:$wvLibVer"
